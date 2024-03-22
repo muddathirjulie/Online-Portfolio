@@ -112,24 +112,26 @@ p {
 .information {
     display: flex;
     flex-direction: column;
-    width: calc(50% - 20px); /* Adjust as needed */
+    width: calc(50% - 20px);
 }
 
 .headshot-container {
-    width: calc(50% - 20px); /* Adjust as needed */
+    width: calc(50% - 20px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
 .column {
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
 }
 
 .headshot {
-    width: 100%; /* Adjust as needed */
-    max-width: 300px; /* Adjust as needed */
+    margin-top: 70px;
+    width: 100%;
+    max-width: 300px;
     border-radius: 50%;
+    padding: 10px;
 }
 
 
@@ -139,16 +141,6 @@ p {
     text-align: center;
     padding: 80px;
 }
-
-/* .headshot {
-    width: 200px;
-    border-radius: 50px;
-}
-
-.headshot-container {
-    display: flex;
-    align-items: center;
-} */
 
 .project-card {
     width: 250px;
