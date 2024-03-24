@@ -40,6 +40,7 @@
           <i class="fa-solid fa-bars"></i>
         </button>
       </nav>
+
       <div class="hero-area">
         <div class="hero-text">
           <h1>Muddathir Julie</h1>
@@ -290,6 +291,15 @@
       <p>Email 1: muddathirjulie7@gmail.com</p>
       <p>Email 2: juliemuddathir01@gmail.com</p>
     </footer>
-    <script src="src/app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var hamburger = document.getElementById("hamburger");
+        var navList = document.getElementById("nav-list");
+
+        hamburger.addEventListener("click", function () {
+          navList.classList.toggle("show");
+        });
+      });
+    </script>
   </body>
 </html>

@@ -192,7 +192,7 @@ p {
  }
  
  @media only screen and (max-width: 1000px) {
-     .hamburger {
+    .hamburger {
         display: block;
         border: 0;
         background-color: transparent;
@@ -200,28 +200,33 @@ p {
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
-     }
-
-     ul {
-        display: none;
-        background-color: #2b2c38;
-        margin: 0px;
-     }
-
-     ul.show {
-        display: block;
     }
 
-     nav {
+    .nav-list {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .nav-list.show {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+
+    nav {
         display: flex;
         flex-direction: column-reverse;
         background-color: #2b2c38;
-     }
+    }
 
-     .logo{
+    .logo {
         display: none;
-     }
- }
+    }
+}
+
 
  .bio {
     font-size: 20px;
