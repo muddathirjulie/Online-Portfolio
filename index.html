@@ -22,6 +22,17 @@
         opacity: 0.5;
       }
 
+      .project-card {
+        /* Add transition for smooth effect */
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      .project-card:hover {
+        /* Increase size or apply any other visual effect */
+        transform: scale(1.1);
+      }
+
       footer a {
         text-decoration: underline;
       }
@@ -210,7 +221,7 @@
         <div class="project-card">
           <img
             class="project-image"
-            src="src/images/services.png"
+            src="src/images/laptop.png"
             alt="Online-Services Image"
           />
           <h3>Project One</h3>
