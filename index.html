@@ -17,7 +17,7 @@
     <title>Muddathir Julie's Portfolio</title>
     <meta charset="UTF-8" />
     <style>
-      .coming-soon {
+      coming-soon {
         pointer-events: none;
         opacity: 0.5;
       }
@@ -26,6 +26,13 @@
         /* Add transition for smooth effect */
         transition: transform 0.3s ease;
         cursor: pointer;
+        width: 45%; /* Adjust the width as per your design */
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
       }
 
       .project-card:hover {
@@ -35,6 +42,13 @@
 
       footer a {
         text-decoration: underline;
+      }
+
+      @media screen and (max-width: 600px) {
+        .project-card {
+          width: 100%; /* Set width to 100% for mobile devices */
+          display: block; /* Display cards as block elements */
+        }
       }
     </style>
   </head>
@@ -221,7 +235,7 @@
         <div class="project-card">
           <img
             class="project-image"
-            src="src/images/services.png"
+            src="src/images/furniture2.png"
             alt="Online-Services Image"
           />
           <h3>Project One</h3>
