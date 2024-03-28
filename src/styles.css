@@ -143,17 +143,54 @@ p {
     padding: 80px;
 }
 
-.project-card {
-    width: 250px;
-    height: 500px;
-    box-shadow: 5px 5px 20px rgb(197, 195, 195);
-    margin: 10px;
-}
-
 .project-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-}
+  }
+  
+  .project-card {
+    width: 300px; /* Set the width of each project card */
+    margin-bottom: 20px; /* Add some space between project cards */
+    background-color: #f9f9f9; /* Background color of project card */
+    border-radius: 10px; /* Add rounded corners to project card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect to project card */
+  }
+  
+  .project-image-container {
+    height: 200px; /* Set the height of the image container */
+    overflow: hidden; /* Hide any overflowing parts of the image */
+    border-top-left-radius: 10px; /* Rounded corners only on the top left and right */
+    border-top-right-radius: 10px;
+  }
+  
+  .project-image {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .project-details {
+    padding: 20px; /* Add some padding around the project details */
+  }
+  
+  .project-details h3 {
+    font-size: 1.2em; /* Set the font size of the project heading */
+    margin-top: 0; /* Remove any default margin */
+  }
+  
+  .project-details .subtext {
+    color: #666; /* Set the color of subtext */
+  }
+  
+  .project-link {
+    color: #007bff; /* Set the color of the project link */
+    text-decoration: none; /* Remove underline from link */
+  }
+  
+  .project-link:hover {
+    text-decoration: underline; /* Underline link on hover */
+  }
+  
 
 @media only screen and (max-width: 1000px) {
     .project-container {
