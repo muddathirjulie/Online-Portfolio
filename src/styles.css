@@ -150,7 +150,7 @@ p {
   }
   
   .project-card {
-    width: 300px; /* Set the width of each project card */
+    width: 300px !important; /* Set the width of each project card */
     margin-bottom: 20px; /* Add some space between project cards */
     background-color: #f9f9f9; /* Background color of project card */
     border-radius: 10px; /* Add rounded corners to project card */
