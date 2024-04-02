@@ -135,6 +135,32 @@ p {
     padding: 10px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .sub-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+    }
+
+    .information {
+        width: 100%;
+    }
+
+    .headshot-container {
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .headshot {
+        width: 400px;
+        height: 350px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+}
 
 .sub-section-alternative {
     display: flex;
@@ -162,7 +188,6 @@ coming-soon {
   }
 
   .project-card:hover {
-    /* Increase size or apply any other visual effect */
     transform: scale(1.1);
   }
 
@@ -172,8 +197,8 @@ coming-soon {
 
   @media screen and (max-width: 600px) {
     .project-card {
-      width: 100%; /* Set width to 100% for mobile devices */
-      display: block; /* Display cards as block elements */
+      width: 100%; 
+      display: block;
     }
   }
 
