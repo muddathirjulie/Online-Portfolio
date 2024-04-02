@@ -143,6 +143,40 @@ p {
     padding: 80px;
 }
 
+coming-soon {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .project-card {
+    /* Add transition for smooth effect */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 300px; /* Adjust the width as per your design */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+  .project-card:hover {
+    /* Increase size or apply any other visual effect */
+    transform: scale(1.1);
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .project-card {
+      width: 100%; /* Set width to 100% for mobile devices */
+      display: block; /* Display cards as block elements */
+    }
+  }
+
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -150,45 +184,45 @@ p {
   }
   
   .project-card {
-    width: 300px !important; /* Set the width of each project card */
-    margin-bottom: 20px; /* Add some space between project cards */
-    background-color: #f9f9f9; /* Background color of project card */
-    border-radius: 10px; /* Add rounded corners to project card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect to project card */
+    width: 300px !important;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .project-image-container {
-    height: 200px; /* Set the height of the image container */
-    overflow: hidden; /* Hide any overflowing parts of the image */
-    border-top-left-radius: 10px; /* Rounded corners only on the top left and right */
+    height: 200px;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
   
   .project-image {
-    width: 100%; /* Make the image fill its container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
   }
   
   .project-details {
-    padding: 20px; /* Add some padding around the project details */
+    padding: 20px;
+    margin-top: 12px;
   }
   
   .project-details h3 {
-    font-size: 1.2em; /* Set the font size of the project heading */
-    margin-top: 0; /* Remove any default margin */
+    font-size: 1.2em;
+    margin-top: 0;
   }
   
   .project-details .subtext {
-    color: #666; /* Set the color of subtext */
+    color: #666;
   }
   
   .project-link {
-    color: #007bff; /* Set the color of the project link */
-    text-decoration: none; /* Remove underline from link */
+    color: #007bff;
+    text-decoration: none;
   }
   
   .project-link:hover {
-    text-decoration: underline; /* Underline link on hover */
+    text-decoration: underline;
   }
   
 
