@@ -346,27 +346,12 @@ coming-soon {
             top: 90px;
         }
 }
+ }
 
 
  .bio {
     font-size: 20px;
  }
-
- /* .skills-section software-skills {
-    display: flex;
-    justify-content: space-between;
-    padding: 80px;
- }
-
- .skills-list {
-    width: 500px;
-    font-size: 30px;
-}
-
-.skills-list li {
-    text-decoration: none;
-    margin-bottom: 10px;
-} */
 
 /* Apply a class to the "Coming Soon" project cards */
 .coming-soon {
@@ -376,6 +361,4 @@ coming-soon {
 /* Optional: Adjust cursor for clarity */
 .coming-soon:hover {
   cursor: not-allowed;
-}
-
  }
