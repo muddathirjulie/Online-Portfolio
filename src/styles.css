@@ -297,7 +297,7 @@ coming-soon {
         display: block;
         border: 0;
         background-color: transparent;
-        color: white;
+        color: black;
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
@@ -339,7 +339,7 @@ coming-soon {
     nav {
         display: flex;
         flex-direction: column-reverse;
-        background-color: #808080;
+        background-color: white;
     }
     
     .logo {
