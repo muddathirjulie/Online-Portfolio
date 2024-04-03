@@ -359,12 +359,10 @@ coming-soon {
     font-size: 20px;
  }
 
-/* Apply a class to the "Coming Soon" project cards */
 .coming-soon {
-  opacity: 0.5; /* Adjust the opacity level as desired */
+  opacity: 0.5;
 }
 
-/* Optional: Adjust cursor for clarity */
 .coming-soon:hover {
   cursor: not-allowed;
  }
