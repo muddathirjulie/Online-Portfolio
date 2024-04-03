@@ -340,6 +340,11 @@ coming-soon {
       .logo {
         display: none;
       } 
+
+      @media screen and (max-width: 768px) {
+        .nav-list {
+            top: 90px;
+        }
 }
 
 
@@ -373,5 +378,4 @@ coming-soon {
   cursor: not-allowed;
 }
 
-
-
+ }
