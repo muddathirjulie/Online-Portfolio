@@ -313,7 +313,7 @@ coming-soon {
         right: -300px;
         width: 300px;
         height: 50px;
-        transform: translateY(90px); /* Use translateY to position the menu */
+        transform: translateY(90px); 
         transition: right 0.3s ease;
     }
     
