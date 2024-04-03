@@ -288,6 +288,11 @@ coming-soon {
  }
  
  @media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     .hamburger {
         display: block;
         border: 0;
@@ -296,57 +301,58 @@ coming-soon {
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
-      }
-      
-      .nav-list {
+    }
+    
+    .nav-list {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
         list-style-type: none;
         position: fixed;
-        top: 90px;
         right: -300px;
         width: 300px;
         height: 50px;
+        transform: translateY(90px); /* Use translateY to position the menu */
         transition: right 0.3s ease;
-      }
-      
-      .nav-list.show {
+    }
+    
+    .nav-list.show {
         right: 0;
-      }
-      
-      .nav-list li {
+    }
+    
+    .nav-list li {
         padding: 8px 10px;
         margin: 0;
-      }
-      
-      .nav-list li a {
+    }
+    
+    .nav-list li a {
         text-decoration: none;
         color: white;
         background-color: transparent;
-      }
-      
-      .nav-list li a:hover {
-        background-color: #333;
-      }
-      
-      nav {
+    }
+    
+    .nav-list li a:hover {
+        background-color: #0A393C;
+    }
+    
+    nav {
         display: flex;
         flex-direction: column-reverse;
-        background-color: #2b2c38;
-      }
-      
-      .logo {
+        background-color: #808080;
+    }
+    
+    .logo {
         display: none;
-      } 
-
-      @media screen and (max-width: 768px) {
+    }
+    
+    @media screen and (max-width: 768px) {
         .nav-list {
-            top: 90px;
+            transform: translateY(90px);
         }
+    }
 }
- }
+    
 
 
  .bio {
