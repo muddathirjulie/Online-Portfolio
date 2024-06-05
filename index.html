@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +18,7 @@
     <title>Muddathir Julie's Portfolio</title>
     <meta charset="UTF-8" />
   </head>
+
   <body>
     <section class="hero">
       <nav>
@@ -25,306 +27,96 @@
           src="src/images/logo1.jpg"
           alt="Muddathir Julie's logo"
         />
-        <ul class="nav-list" id="nav-list">
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#attachments">Attachments</a></li>
-          <li><a href="#contact-me">Contact me</a></li>
-        </ul>
         <button class="hamburger" id="hamburger">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </button>
+        <ul class="nav-container" id="dynamicNav"></ul>
       </nav>
 
       <div class="hero-area">
         <div class="hero-text">
-          <h1>Muddathir Julie</h1>
-          <p>Software Developer & Data Analyst</p>
-          <div class="button"><a href="#about-me">About me</a></div>
+          <h2 class="intro">Hi, My name is</h2>
+          <h1>Muddathir Julie.</h1>
+          <p class="job">I am a Junior Software Engineer and Data Analyst.</p>
+<p class="description">
+    As a dedicated software developer with a strong passion for innovation and problem-solving, <br />
+    I excel in the dynamic realm of coding, where each line of code represents an opportunity to craft elegant and efficient solutions. <br />
+    My expertise lies in integrating analytical insights with robust software development to drive data-driven decisions and optimize performance. <br />
+</p>
+
+          <p class="welcome-message">Welcome to My Portfolio!</p>
+
+          <div class="button"><a href="about.html">About me</a></div>
         </div>
         <div class="socials">
           <div>
-            <a
-              href="https://www.linkedin.com/in/muddathir-julie"
-              target="_blank"
-              class="social"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="#ffffff"
-                width="50"
-                height="50"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
-                />
-              </svg>
+            <a href="https://www.linkedin.com/in/muddathir-julie" target="_blank" class="social">
+              <i class="fab fa-linkedin"></i>
             </a>
           </div>
           <div>
-            <a
-              href="https://github.com/muddathirjulie"
-              target="_blank"
-              class="social"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="#ffffff"
-                width="50"
-                height="50"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                />
-              </svg>
+            <a href="https://github.com/muddathirjulie" target="_blank" class="social">
+              <i class="fab fa-github"></i>
             </a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="sub-section" id="about-me">
-      <div class="information">
-        <div class="column">
-          <h2>About me</h2>
-          <p class="bio">
-            Hi, I'm Muddathir, a dedicated Junior Software Developer and Data
-            Analyst, specializing in creating cutting-edge solutions. Armed with
-            a Bachelor of Science in Information Technology (BSc.IT) majoring in
-            Software Engineering from Eduvos, I bring a robust
-            foundation to my work.
-          </p>
-          <br />
-          <p class="bio">
-            My passion lies in extracting actionable insights from data and
-            developing innovative software solutions. Proficient in both Data
-            Analysis and Software Development, I excel in transforming intricate
-            data into strategic plans and constructing resilient applications
-            that address real-world challenges.
-          </p>
-          <br />
-          <p class="bio">
-            What distinguishes me is my knack for translating intricate concepts
-            into user-friendly applications. I adhere to the philosophy of
-            crafting clean, maintainable code that not only fulfills functional
-            requirements but also aligns with industry best practices. My
-            commitment to staying ahead of the curve is evident in my constant
-            exploration of emerging technologies and adherence to the latest
-            trends, ensuring my solutions are cutting-edge and future-ready.
-          </p>
-        </div>
-        <br />
-        <div class="column">
-          <p class="bio">
-            Beyond technical proficiency, I am a skilled communicator and a
-            natural problem-solver. I relish collaborating closely with clients
-            and stakeholders, understanding their unique needs, and delivering
-            customized solutions that surpass expectations. A proponent of
-            continuous learning and personal growth, I actively seek
-            opportunities to broaden my skill set and take on new challenges.
-          </p>
-          <br />
-          <p class="bio">
-            In my portfolio, you'll find a showcase of projects highlighting my
-            technical prowess and creative problem-solving abilities. I invite
-            you to explore my work and reach out for any questions or exciting
-            collaboration opportunities.
-          </p>
-          <br />
-          <p class="bio">
-            Thank you for visiting my portfolio, and I eagerly anticipate
-            connecting with you!
-          </p>
+      <section class="skills">
+        <h1>Skills: </h1>
+        <div class="scroll-container">
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="src/images/174854.png" alt="Skill Image 2" />
+          </div>
+          <div class="grid-item">
+            <img src="src/images/css.png" alt="Skill Image 2" />
+          </div>
+          <div class="grid-item">
+          <img src="src/images/JavaScript-logo.png" alt="Skill Image 1" />
+          </div>
+          <div class="grid-item">
+            <img src="src/images/typescript.png" alt="Skill Image 2" />
+          </div>
+          <div class="grid-item">
+            <img
+              src="src/images/Sql_data_base_with_logo.png"
+              alt="Skill Image 2"
+            />
+          </div>
+          <div class="grid-item">
+            <img src="src/images/c.png" alt="Skill Image 2" />
+          </div>
+            <div class="grid-item">
+              <img
+                src="src/images/Angular_full_color_logo.svg.png"
+                alt="Skill Image 2"
+              />
+            </div>
+            <div class="grid-item">
+              <img src="src/images/net.png" alt="Skill Image 2" />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="headshot-container">
-        <img
-          class="headshot"
-          src="src/images/grad3.jpg"
-          alt="Muddathir Julie headshot"
-        />
+      </section>
+      <hr class="vertical-line" />
+      
+      <div class="email">
+        <p>
+          <a href="mailto:muddathirjulie7@gmail.com" target="_blank"
+            >muddathirjulie7@gmail.com</a
+          >
+        </p>
       </div>
+      <hr class="vertical-line-new" />
+       <!-- Skills Section -->
     </section>
-
-    <section class="sub-section-alternative" id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <div class="project-image-container">
-            <img
-              class="project-image"
-              src="src/images/services.png"
-              alt="Online-Services Image"
-            />
-          </div>
-          <div class="project-details">
-            <h3>Project One</h3>
-            <p class="subtext">
-              A game-changing platform that puts the power of service booking
-              directly into the hands of users. Whether you need any service
-              professional, my website simplifies the process.
-            </p>
-            <hr />
-            <p class="subtext">
-              <a
-                class="project-link"
-                href="https://muddathirjulie.github.io/Online-Services/"
-                target="_blank"
-                >View here</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image-container">
-            <img
-              class="project-image"
-              src="src/images/riddles.jpg"
-              alt="Project Two Image"
-            />
-          </div>
-          <div class="project-details">
-            <h3>Project Two</h3>
-            <p class="subtext">
-              Engage with a collection of captivating riddles, input your
-              answers, and enjoy dynamic feedback with confetti celebrations
-              upon correct guesses.
-            </p>
-            <hr />
-            <p class="subtext">
-              <a
-                class="project-link"
-                href="https://muddathirjulie.github.io/Riddle-Game/"
-                target="_blank"
-                >View here</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="project-card coming-soon">
-          <img
-            class="project-image"
-            src="src/images/placeholder.png"
-            alt="Project Three Image"
-          />
-          <h3>Project Three</h3>
-          <p class="subtext">Coming Soon!</p>
-          <hr />
-          <p class="subtext">
-            <a
-              class="project-link"
-              href="https://drive.google.com/file/d/1FUJAA_rHvGs9vLrLxDcRzSlElcGXGiYG/view?usp=drive_link"
-              target="_blank"
-              >View here</a
-            >
-          </p>
-        </div>
-        <div class="project-card coming-soon">
-          <img
-            class="project-image"
-            src="src/images/placeholder.png"
-            alt="Project Four Image"
-          />
-          <h3>Project Four</h3>
-          <p class="subtext">Coming Soon!</p>
-          <hr />
-          <p class="subtext">
-            <a
-              class="project-link"
-              href="https://www.linkedin.com/in/muddathir-julie-952578224/"
-              target="_blank"
-              >View here</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="sub-section-alternative" id="attachments">
-      <h2>Attachments</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <div class="project-image-container">
-            <img
-              class="project-image"
-              src="src/images/cv.jpg"
-              alt="Online-Services Image"
-            />
-          </div>
-          <div class="project-details">
-            <h3>CV</h3>
-            <hr />
-            <p class="subtext">
-              <a
-                class="project-link"
-                href="https://drive.google.com/file/d/1FUJAA_rHvGs9vLrLxDcRzSlElcGXGiYG/view?usp=drive_link"
-                target="_blank"
-                >View here</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image-container">
-            <img
-              class="project-image"
-              src="src/images/graduation.jpg"
-              alt="Project Two Image"
-            />
-          </div>
-          <div class="project-details">
-            <h3>Letter of Completion</h3>
-            <hr />
-            <p class="subtext">
-              <a
-                class="project-link"
-                href="https://drive.google.com/file/d/1MBSI9FSgej582MpEphzpIoFot2PLxth2/view?usp=drive_link"
-                target="_blank"
-                >View here</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image-container">
-            <img
-              class="project-image"
-              src="src/images/references.jpg"
-              alt="Project Two Image"
-            />
-          </div>
-          <div class="project-details">
-            <h3>Reference</h3>
-            <hr />
-            <p class="subtext">
-              <a
-                class="project-link"
-                href="https://drive.google.com/file/d/1zRgyuH7W1bXg9wJSuHJe0A0m4WEOW_ep/view?usp=drive_link"
-                target="_blank"
-                >View here</a
-              >
-            </p>
-          </div>
-        </div>
-        </section>
 
     <footer id="contact-me">
-      <h2>Contact me:</h2>
-      <p>
-        Email 1:
-        <a href="mailto:muddathirjulie7@gmail.com" target="_blank"
-          >muddathirjulie7@gmail.com</a
-        >
-      </p>
-      <p>
-        Email 2:
-        <a href="mailto:juliemuddathir01@gmail.com" target="_blank"
-          >juliemuddathir01@gmail.com</a
-        >
-      </p>
     </footer>
-     <script src="src/app.js"></script>
+    <!-- <script src="menu.js"></script> -->
+    <script src="nav.js"></script>
+    <div id="dynamicFooter"></div>
+    <!-- <script src="src/app.js"></script> -->
   </body>
 </html>

@@ -1,0 +1,117 @@
+.hero-project {
+  background-color: #291C3A;
+  height: 94.3vh;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 69.6vh;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #33d568;
+}
+
+.project-card {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  max-width: 300px;
+  height: 600px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-15px);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* 
+.project-details {
+  margin-top: auto;
+} */
+
+.project-details h3 {
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.project-details {
+  position: absolute; /* Add this line */
+  bottom: 0; /* Add this line */
+  left: 0; /* Add this line */
+  width: 100%; /* Add this line */
+  padding-bottom: 30px; /* Adjust as needed */
+}
+
+.project-link-card {
+  position: absolute; /* Add this line */
+  font-size: medium;
+  bottom: 10px; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translateX(-50%); /* Adjust as needed */
+  color: #33d568;
+}
+
+.subtext {
+  font-size: 0.35em;
+  color: #666666;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+/* 
+.project-link-card {
+  color: #33d568;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+} */
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.coming-soon {
+  opacity: 0.5;
+}
+
+hr {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.contact-me{
+  background-color: #291C3A; 
+  color: white; 
+  text-align: center; 
+  padding: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-container {
+    justify-content: flex-start;
+  }
+}

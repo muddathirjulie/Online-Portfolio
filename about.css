@@ -1,0 +1,116 @@
+.hero-about {
+    background-color: #291C3A;
+    height: 94.3vh;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+
+
+ h2 {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+.sub-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: calc(100% - 20px);
+}
+
+.headshot-container {
+    width: calc(50% - 20px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.column {
+    margin-bottom: 30px;
+}
+.headshot {
+    margin-top: 20px;
+    margin-right: 70px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+.button-contact {
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 10px auto;
+    border: 2px solid #33d568;
+}
+
+.button-contact a{
+    color: #33d568;
+    text-decoration: none;
+}
+.button-contact:hover {
+  background-color: #33d568;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-contact:hover a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.button-contact:active{
+    background-color: #A9A9A9;
+    color: #808080;
+}
+@media only screen and (max-width: 1000px) {
+
+    .hero {
+        height: 100vh;
+    }
+    .sub-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+        margin-top: -30vh;
+    }
+
+    .information {
+        width: 100%;
+    }
+
+    .headshot-container {
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .headshot {
+        width: 400px;
+        height: 350px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .button-contact{
+        margin-top: 0px;
+    }
+    
+}
