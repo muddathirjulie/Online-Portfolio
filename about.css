@@ -79,6 +79,9 @@
     color: #808080;
 }
 @media only screen and (max-width: 1000px) {
+    h2{
+        margin-top: 100px;
+    }
     .hamburger {
         display: block;
         position: absolute;
@@ -167,5 +170,7 @@
     .button-contact{
         margin-top: 0px;
     }
+
+ 
     
 }
