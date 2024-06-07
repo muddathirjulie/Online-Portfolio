@@ -185,4 +185,13 @@ hr {
     align-items: flex-start; /* Align items to the top */
     overflow-y: auto; /* Ensure vertical scrolling */
   }
+  .logo {
+    height: 40px;
+    margin: 30px;
+    border-radius: 100px;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    z-index: 999;
+}
 }

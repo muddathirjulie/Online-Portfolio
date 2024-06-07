@@ -301,10 +301,16 @@ footer {
       padding-left: 0;
       padding-bottom: 400px;
     }
-
     .logo {
-      display: none;
-    }
+      height: 40px;
+      margin: 30px;
+      border-radius: 100px;
+      position: absolute;
+      top: -12px;
+      left: 0;
+      z-index: 999;
+  }
+  
 
     .hamburger {
       display: block;
