@@ -111,6 +111,64 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 9999; /* Ensure the hamburger button is above other elements */
+  }
+
+  .nav-container {
+      display: none; /* Hide the navigation list by default */
+      position: relative;
+      top: 100px; /* Adjust as needed */
+      right: 27px;
+      background-color: #291C3A;
+      padding: 10px;
+      list-style-type: none;
+      width: 100%; /* Set the width to 100% */
+      transition: right 0.3s ease;
+      
+  }
+
+  .nav-container.active {
+      display: block; /* Show the navigation list when active */
+  }
+
+.nav-container li {
+      text-align: right; /* Center the navigation items */
+      padding-right: 10px;
+  }
+
+  .nav-container li a {
+      margin-top:-70px;
+      display: block;
+      padding: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 15px; /* Adjust as needed */
+  }
+
+  .nav-button{
+      /* display: block;
+      position: absolute;
+      margin-top: -8px;
+      right: -19px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      z-index: 9999; */
+      display: none;
+  }
   .project-container {
     justify-content: flex-start;
   }
