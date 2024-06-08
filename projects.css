@@ -130,7 +130,7 @@ hr {
     right: 20px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 48px;
     color: white;
     cursor: pointer;
     z-index: 9999; /* Ensure the hamburger button is above other elements */
@@ -139,7 +139,7 @@ hr {
   .nav-container {
       display: none; /* Hide the navigation list by default */
       position: relative;
-      top: 100px; /* Adjust as needed */
+      top: 120px; /* Adjust as needed */
       right: 27px;
       background-color: #291C3A;
       padding: 10px;
@@ -159,12 +159,12 @@ hr {
   }
 
   .nav-container li a {
-      margin-top:-70px;
+      margin-top:-50px;
       display: block;
       padding: 0;
     color: white;
     text-decoration: none;
-    font-size: 15px; /* Adjust as needed */
+    font-size: 30px; /* Adjust as needed */
   }
 
   .nav-button{
@@ -186,7 +186,7 @@ hr {
     overflow-y: auto; /* Ensure vertical scrolling */
   }
   .logo {
-    height: 40px;
+    height: 80px;
     margin: 30px;
     border-radius: 100px;
     position: absolute;
