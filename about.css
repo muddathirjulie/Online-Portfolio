@@ -91,7 +91,7 @@
         padding-bottom: 400px;
       }
     h2{
-        margin-top:250px;
+        margin-top:550px;
     }
     .hamburger {
         display: block;
@@ -152,16 +152,14 @@
     .hero {
         height: 100vh;
     }
-    /* .sub-section {
+    .sub-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 5%;
         margin-top: -40vh !important;
         padding: 80px;
-        top: -10%;
-        transform: translateY(-20%);
-    } */
+    }
 
     .information {
         width: 100%;
