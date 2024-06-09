@@ -371,7 +371,7 @@ footer {
     }
     
     .hero-text {
-        margin-bottom: 50px;
+      margin-top: 200px;
         margin-left: 21px;
     }
 
@@ -379,9 +379,8 @@ footer {
     .hero-text .h1 {
       font-size: medium;
     }
-    
     .description {
-      display: none;
+      font-size: 10px;
     }
     
     .job {
@@ -393,15 +392,14 @@ footer {
     }
 
     .skills {
-      /* text-align: center;
+      text-align: center;
       margin-top: -20px;
       margin-bottom: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      background: none; */
-      display: none;
+      background: none;
     }
     
     .grid-container {
