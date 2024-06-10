@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     /* position: relative; */
 }
 
@@ -38,7 +38,7 @@
 }
 
 .column {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .headshot {
     margin-top: 20px;
@@ -56,8 +56,9 @@
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-    margin: 10px auto;
+    margin: 10px auto 0 auto; /* Adjusted margin to remove extra space */
     border: 2px solid #33d568;
+    position: relative;
 }
 
 .button-contact a{
@@ -85,11 +86,11 @@
         font-size: 10px;
         height: 100vh;
       }
-  
+/*   
       .hero-about {
         padding-left: 0;
         padding-bottom: 400px;
-      }
+      } */
     h2{
         margin-top:550px;
     }
@@ -179,13 +180,11 @@
         margin: 0 auto;
     }
 
-    /* .button-contact{
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translateX(-50%);
+    .button-contact{
+       top: -120px;
+    }
 
-    }  */
+    } 
 
     .logo {
         height: 80px;
@@ -197,4 +196,3 @@
         z-index: 999;
     }
     
-}
