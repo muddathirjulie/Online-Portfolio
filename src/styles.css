@@ -288,6 +288,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .body{
+    overflow: scroll;
+  }
   .hero {
       font-size: 10px;
       height: 1000;
