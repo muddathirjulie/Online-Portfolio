@@ -181,7 +181,7 @@
     }
 
     .button-contact{
-       top: -120px;
+        transform: translateY(-235%);
     }
 
     } 
