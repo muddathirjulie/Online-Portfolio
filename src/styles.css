@@ -299,7 +299,7 @@ footer {
 
   .hero-area {
       padding-left: 0;
-      padding-bottom: 400px;
+      padding-bottom: 300px;
   }
 
   .logo {
@@ -385,7 +385,7 @@ footer {
 
   .skills {
       text-align: center;
-      margin-top: -500px; /* Adjusted margin-top for mobile view */
+      margin-top: -300px; /* Adjusted margin-top for mobile view */
       margin-bottom: 5px;
       display: flex;
       flex-direction: column;
@@ -393,6 +393,10 @@ footer {
       align-items: center;
       width: 100%;
       background: none;
+  }
+
+  .skills h1 {
+    color: white;
   }
 
   .grid-container {
