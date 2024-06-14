@@ -344,7 +344,7 @@ footer {
       position: absolute;
       top: 60px; /* Adjust as needed */
       right: 0;
-      background-color: #291C3A;
+      background: none;
       padding: 0px;
       list-style-type: none;
       width: 100%; /* Set the width to 100% */
