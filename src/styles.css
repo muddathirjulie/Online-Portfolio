@@ -166,7 +166,7 @@ p {
 
 .socials {
   position: absolute;
-  top: 900px;
+  top: 80vh;
   margin-left: -89.8px;
 }
 
@@ -185,7 +185,7 @@ p {
 
 .email {
   position: absolute;
-  top:800px;
+  top:70vh;
   right: 20px;
   writing-mode: vertical-lr;
 }
