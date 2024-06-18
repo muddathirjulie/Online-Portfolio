@@ -361,7 +361,7 @@ footer {
 }
 
 .grid-item img {
-    width: 50%;
+    width: 80%;
     height: auto;
     border-radius: 5px;
     transition: transform 0.3s;
