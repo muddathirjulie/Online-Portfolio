@@ -88,7 +88,6 @@ nav ul li a:hover {
 .nav-button a {
   color: #33d568;
   text-decoration: none;
-  padding: 5px;
 }
 
 .nav-number.active {
@@ -264,27 +263,43 @@ footer {
 
 .skills {
   text-align: center;
-  margin-top: 20px; /* Adjusted margin-top */
+  margin-top: 20px;
   margin-bottom: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   background: none;
 }
 
-.grid-container {
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 5px;
-  padding: 20px;
+}
+
+.grid-item {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
 }
 
 .grid-item img {
-  border-radius: 20px;
-  max-width: 70px;
-  max-height: 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 768px) {
@@ -322,9 +337,9 @@ footer {
     justify-content: center;
     align-items: center;
     transform: translateY(-50%);
-    position: relative; /* Ensure relative positioning for translateY */
-    top: -15%; /* Center vertically */
-    margin: 0 auto; /* Center horizontally */
+    position: relative;
+    top: -15%;
+    margin: 0 auto;
 }
 
 
@@ -339,7 +354,7 @@ footer {
 }
 
 .grid-item {
-    flex: 0 0 25%; /* Show 4 items at a time */
+    flex: 0 0 25%;
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
@@ -367,30 +382,30 @@ footer {
       font-size: 24px;
       color: white;
       cursor: pointer;
-      z-index: 9999; /* Ensure the hamburger button is above other elements */
+      z-index: 9999;
   }
 
   .nav-container {
-      display: none; /* Hide the navigation list by default */
+      display: none;
       position: absolute;
-      top: 60px; /* Adjust as needed */
+      top: 60px;
       right: 0;
       background: none;
       padding: 0px;
       list-style-type: none;
-      width: 100%; /* Set the width to 100% */
+      width: 100%;
       transition: right 0.3s ease;
   }
 
   .nav-container.active {
       display: block;
-      padding: 10px; /* Show the navigation list when active */
+      padding: 10px;
       margin-top: 60px;
       margin-right: 17px;
   }
 
   .nav-container li {
-      text-align: right; /* Center the navigation items */
+      text-align: right;
       padding-right: 10px;
   }
 
@@ -399,7 +414,7 @@ footer {
       padding: 13px 0;
       color: white;
       text-decoration: none;
-      font-size: 15px; /* Adjust as needed */
+      font-size: 15px;
       margin-top: -100px;
   }
 
