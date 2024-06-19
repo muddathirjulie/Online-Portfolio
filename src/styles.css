@@ -17,13 +17,13 @@ section {
 }
 
 .hero {
-  /* background-color: #291C3A;
-  min-height: 100vh; */
+  background-color: #291C3A;
+  min-height: 100vh;
   color: white;
-  /* font-size: 40px;
+  font-size: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .hero-area {
@@ -309,7 +309,7 @@ footer {
 
   .hero-area {
       padding-left: 0;
-      padding-bottom: 350px;
+      /* padding-bottom: 350px; */
   }
 
   .logo {
@@ -331,7 +331,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-50%);
+    transform: translateY(100px);
     position: relative;
     top: -250px;
     margin: 0 auto;
