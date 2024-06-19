@@ -18,7 +18,7 @@ section {
 
 .hero {
   background-color: #291C3A;
-  height: 100vh;
+  /* height: 100vh; */
   color: white;
   font-size: 40px;
   display: flex;
