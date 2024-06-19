@@ -307,10 +307,10 @@ footer {
   .body{
     overflow: hidden;
   }
-  .hero {
+  /* .hero {
       font-size: 10px;
       height: 100%;
-  }
+  } */
 
   .hero-area {
       padding-left: 0;
