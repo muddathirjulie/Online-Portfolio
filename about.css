@@ -164,7 +164,7 @@
 
     .information {
         width: 100%;
-        margin-top: 250px;
+        margin-top: 300px;
     }
 
     .headshot-container {
@@ -182,7 +182,7 @@
     }
 
     .button-contact{
-        transform: translateY(-235%);
+        transform: translateY(-250%);
     }
 
     } 
