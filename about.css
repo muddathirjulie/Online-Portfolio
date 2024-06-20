@@ -93,6 +93,8 @@
       } */
     h2{
         margin-top:550px;
+        display: flex;
+        justify-content: center;
     }
     .hamburger {
         display: block;
