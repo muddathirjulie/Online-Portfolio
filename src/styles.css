@@ -331,7 +331,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(100px);
+    transform: translateY(200px);
     position: relative;
     top: -250px;
     margin: 0 auto;
