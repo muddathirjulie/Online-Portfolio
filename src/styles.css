@@ -263,7 +263,7 @@ footer {
 
 .skills {
   text-align: center;
-  margin: 20px 0 5px; /* Adjusted to reduce bottom margin */
+  margin: 20px 0 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
