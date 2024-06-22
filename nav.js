@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const buttonAnchor = document.createElement("a");
     buttonAnchor.href = "https://drive.google.com/file/d/1LBtFaJPF-4K4L0ro1N0GyRJ1LoKiJdpH/view?usp=sharing";
     buttonAnchor.textContent = "Resume";
+    buttonAnchor.target = "_blank";
 
     // Add hover effect
     buttonAnchor.addEventListener("mouseenter", function () {
