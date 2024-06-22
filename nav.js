@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const aboutButton = document.createElement("li");
     aboutButton.classList.add("nav-button");
     const buttonAnchor = document.createElement("a");
-    buttonAnchor.href = "https://drive.google.com/file/d/1wgMw5r8alQZQx5LU34sK5eQhQ-v86m0D/view?usp=sharing";
+    buttonAnchor.href = "https://drive.google.com/file/d/1lwYQslC6GBhmKC0TEIYBLkJkCent3nh2/view?usp=sharing";
     buttonAnchor.textContent = "Resume";
 
     // Add hover effect
