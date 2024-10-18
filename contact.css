@@ -98,30 +98,25 @@ h1 {
 /* Updated Form Styles */
 .contact-form {
   margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-color: rgba(255, 255, 255, 0.1); /* Optional: Light background for better visibility */
   padding: 20px;
   border-radius: 10px;
-  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  margin-bottom: 15px; /* Space between form groups */
 }
 
 label {
   font-size: 1.1em;
   color: #33d568;
+  display: block; /* Ensures label is above the input field */
   margin-bottom: 5px;
 }
 
 input,
 textarea {
-  width: 100%;
+  width: calc(100% - 22px); /* Full width minus padding and border */
   padding: 10px;
   border: 1px solid #33d568;
   border-radius: 5px;
@@ -138,12 +133,12 @@ textarea:focus {
 }
 
 input {
-  height: 45px;
+  height: 45px; /* Height for input field */
 }
 
 textarea {
-  height: 100px;
-  resize: none;
+  height: 100px; /* Height for textarea */
+  resize: none; /* Prevent resizing */
 }
 
 .btn-submit {
@@ -158,5 +153,5 @@ textarea {
 }
 
 .btn-submit:hover {
-  background-color: #2ea259;
+  background-color: #2ea259; /* Hover effect */
 }
