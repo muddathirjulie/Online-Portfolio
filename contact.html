@@ -35,14 +35,33 @@
         <h1>Contact Me</h1>
         <div class="contact-info">
           <p>Feel free to reach out to me:</p>
-          <div class="emails">
+          <!-- <div class="emails">
             <p>
               Email:
               <a href="mailto:muddathirjulie7@gmail.m"
                 >muddathirjulie7@gmail.com</a
               >
             </p>
-          </div>
+          </div> -->
+
+          <!-- Contact Form -->
+          <form
+            action="https://formspree.io/f/mpwzzewp"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="form-group">
+              <label>Your email:</label>
+              <input type="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label>Your message:</label>
+              <textarea name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send</button>
+          </form>
+          <!-- End of Form -->
+
           <!-- <div class="phones">
             <p>Phone: <a href="tel:+27823081185">+27 82 308 1185</a></p>
           </div> -->
