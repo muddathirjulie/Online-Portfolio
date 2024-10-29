@@ -1,201 +1,129 @@
-.hero-about {
+/* Reset any default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hero-about {
     background-color: #291C3A;
     min-height: 100vh;
     color: white;
-    font-size: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 0;
   }
   
-
-
- h2 {
-    margin-bottom: 10px;
-    font-size: 1em;
+  /* Remove any potential gap at the end of hero */
+  .hero-about::after {
+    content: "";
+    display: block;
+    background-color: #291C3A; /* Ensures color continuity */
+    height: 20px;
+    margin-top: -20px;
   }
-
-.sub-section {
+  
+  /* About Me section styling */
+  .sub-section {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    margin-bottom: 10px;
-    /* position: relative; */
-}
-
-.information {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    width: calc(100% - 20px);
-}
-
-.headshot-container {
-    width: calc(50% - 20px);
+    padding: 20px;
+  }
+  
+  .information {
+    width: 60%;
+  }
+  
+  .headshot-container {
+    width: 40%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-.column {
-    margin-bottom: 10px;
-}
-.headshot {
-    margin-top: 20px;
-    margin-right: 70px;
+  }
+  
+  .headshot {
     width: 100%;
     max-width: 300px;
     border-radius: 20%;
-    padding: 10px;
-}
-
-.button-contact {
+  }
+  
+  /* Attachments section */
+  .attachments-section {
+    background-color: #291C3A;
+    padding: 40px 20px;
+    color: white;
+  }
+  
+  .attachments-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #33d568;
+  }
+  
+  .attachments-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .attachments-section li {
+    margin: 10px 0;
+  }
+  
+  .attachments-section a {
+    color: #33d568;
+    text-decoration: none;
+  }
+  
+  .attachments-section a:hover {
+    color: #fff;
+  }
+  
+  /* Contact button styling */
+  .button-contact {
     width: 250px;
     height: 50px;
     border-radius: 5px;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-    margin: 10px auto 0 auto; /* Adjusted margin to remove extra space */
+    margin: 20px auto;
     border: 2px solid #33d568;
-    position: relative;
-}
-
-.button-contact a{
     color: #33d568;
+  }
+  
+  .button-contact a {
+    color: inherit;
     text-decoration: none;
-}
-.button-contact:hover {
-  background-color: #33d568;
-  color: #fff;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.button-contact:hover a {
-  color: #fff;
-  transition: color 0.3s;
-}
-
-.button-contact:active{
-    background-color: #A9A9A9;
-    color: #808080;
-}
-@media only screen and (max-width: 1000px) {
-
-    .hero {
-        font-size: 10px;
-        height: 100vh;
-      }
-/*   
-      .hero-about {
-        padding-left: 0;
-        padding-bottom: 400px;
-      } */
-    h2{
-        margin-top:550px;
-        display: flex;
-        justify-content: center;
-    }
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: none;
-        border: none;
-        font-size: 48px;
-        color: white;
-        cursor: pointer;
-        z-index: 9999; /* Ensure the hamburger button is above other elements */
-      }
-      .nav-container {
-          display: none; /* Hide the navigation list by default */
-          position: relative;
-          top: 120px; /* Adjust as needed */
-          right: 27px;
-          background:transparent;
-          padding: 10px;
-          list-style-type: none;
-          width: 100%; /* Set the width to 100% */
-          transition: right 0.3s ease;
-          
-      }
+  }
   
-      .nav-container.active {
-          display: block; /* Show the navigation list when active */
-      }
+  .button-contact:hover {
+    background-color: #33d568;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+  }
   
-   .nav-container li {
-          text-align: right; /* Center the navigation items */
-          padding-right: 10px;
-      }
-  
-      .nav-container li a {
-          margin-top:-50px;
-          display: block;
-          padding: 0;
-        color: white;
-        text-decoration: none;
-        font-size: 30px; /* Adjust as needed */
-      }
-  
-      .nav-button{
-          /* display: block;
-          position: absolute;
-          margin-top: -8px;
-          right: -19px;
-          background: none;
-          border: none;
-          font-size: 24px;
-          color: white;
-          cursor: pointer;
-          z-index: 9999; */
-          display: none;
-      }
-    .hero {
-        height: 100vh;
-    }
+  /* Mobile responsiveness */
+  @media only screen and (max-width: 1000px) {
     .sub-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5%;
-        margin-top: -40vh !important;
-        padding: 80px;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
     }
-
+  
     .information {
-        width: 100%;
-        margin-top: 400px;
+      width: 100%;
     }
-
+  
     .headshot-container {
-        width: 100%;
-        margin-top: 40px;
-        text-align: center;
+      width: 100%;
+      text-align: center;
     }
-
+  
     .headshot {
-        width: 400px;
-        height: 350px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 0 auto;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
     }
-
-    .button-contact{
-        transform: translateY(-100%);
-    }
-
-    } 
-
-    .logo {
-        height: 80px;
-        margin: 30px;
-        border-radius: 100px;
-        position: absolute;
-        top: -12px;
-        left: 0;
-        z-index: 999;
-    }
-    
+  }
+  
