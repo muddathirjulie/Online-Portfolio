@@ -11,7 +11,7 @@ body {
     font-size: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
+    justify-content: center;
     align-items: center;
     animation: fadeIn 1.5s ease-in;
     padding: 20px;
@@ -19,16 +19,16 @@ body {
 
 h2 {
     margin-bottom: 10px;
-    font-size: 1.5em; /* Adjust font size for headings */
+    font-size: 1.5em;
     opacity: 0;
     animation: slideUp 1s ease-in forwards;
-    text-align: center; /* Ensure it's centered */
+    text-align: center;
 }
 
 .sub-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content */
+    align-items: center;
     padding: 20px;
     margin-bottom: 10px;
     animation: fadeIn 1.5s ease-in;
@@ -71,8 +71,9 @@ h2 {
     font-weight: 300;
     margin: 20px auto;
     border: 2px solid #33d568;
-    position: relative;
-    top: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -172,7 +173,7 @@ h2 {
 
 @media only screen and (max-width: 600px) {
     .hero-about {
-        font-size: 14px; /* Adjust font size for small screens */
+        font-size: 14px;
         padding: 5%;
     }
 
