@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Muddathir Julie</title>
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +21,8 @@
     <link rel="icon" href="/src/images/favicon.ico" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="about.js"></script>
-    <!-- Custom JavaScript -->
   </head>
+
   <body>
     <section class="hero-about">
       <nav>
@@ -36,33 +39,32 @@
       <div class="sub-section" id="about-me">
         <div class="information">
           <h2>About me</h2>
-          <p class="bio-about">
+          <p class="bio">
             Hello, I am Muddathir, a dedicated Junior Software Engineer and Data
             Analyst. Welcome to my digital portfolio, where I aim to create
             sophisticated solutions to intricate challenges and explore the
             limitless potential of technology.
           </p>
-          <br />
           <p class="bio">
-            By graduating in 2023 with my a Bachelor of Science in Information
-            Technology degree with a major in Software Engineering from Eduvos,
-            I have developed a solid foundation in software development
-            methodologies, algorithms, and data structures. My academic journey
-            allowed me to engage in a variety of projects, from creating dynamic
-            web applications to solving complex algorithmic problems. These
-            experiences have not only deepened my technical expertise but also
-            ignited my passion for technology.
+            I graduated in May 2023 with a Bachelor of Science in Information
+            Technology degree, majoring in Software Engineering from Eduvos,
+            which gave me a strong foundation in software development
+            methodologies, algorithms, and data structures. During my studies, I
+            engaged in various projects, from creating dynamic web applications
+            to solving complex algorithmic problems, deepening my technical
+            expertise and igniting my passion for technology.
           </p>
-          <br />
           <p class="bio">
             I gained valuable experience as a Full Stack Developer Intern at
             Digital2DNA from February to August 2023, where I honed my skills in
-            both front-end and back-end development. Since November 2023, I've
-            been working as a Data Analyst at Creed Living Pty (Ltd), where I
-            leverage my analytical skills to extract insights and drive
-            data-informed decisions.
+            both front-end and back-end development. In November 2023, I joined
+            Creed Living Pty (Ltd) as a Data Analyst on a one-year contract,
+            where I leveraged my analytical skills to extract insights and drive
+            data-informed decisions. As of November 2024, I am now a permanent
+            team member at Creed Living, where I also work on managing and
+            optimizing the company's website for performance and user
+            experience.
           </p>
-          <br />
           <p class="bio">
             In addition to my Software Engineering background, I bring a robust
             set of Data Analysis skills to the table. I am proficient in
@@ -72,7 +74,6 @@
             enables me to tackle challenges from multiple angles, ensuring
             comprehensive and effective solutions.
           </p>
-          <br />
           <p class="bio">
             I excel in dynamic, collaborative environments where creativity and
             teamwork are valued. I am continually exploring new technologies and
@@ -81,7 +82,6 @@
             coding independently, I tackle every challenge with enthusiasm and a
             commitment to learning and growth.
           </p>
-          <br />
           <p class="bio">
             Beyond my professional and academic pursuits, I am passionate about
             community engagement and contributing to open-source projects. I
@@ -89,12 +89,12 @@
             change and am eager to be involved in initiatives that make a
             meaningful impact.
           </p>
-          <br />
           <p class="bio">
             Let's connect and discover how we can collaborate to shape the
             future of technology together!
           </p>
         </div>
+
         <div class="headshot-container">
           <img
             class="headshot"
@@ -103,9 +103,20 @@
           />
         </div>
       </div>
-      <div class="button-contact"><a href="contact.html">Contact me</a></div>
+      <div class="button-contact">
+        <a href="contact.html">Contact me</a>
+      </div>
     </section>
 
+    <script>
+      // JavaScript for staggered line-by-line animation
+      document.addEventListener("DOMContentLoaded", () => {
+        const lines = document.querySelectorAll(".bio");
+        lines.forEach((line, index) => {
+          line.style.animationDelay = `${index * 0.5}s`;
+        });
+      });
+    </script>
     <script src="nav.js"></script>
     <div id="dynamicFooter"></div>
   </body>
