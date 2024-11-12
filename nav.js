@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = [
         { title: "Home", url: "index.html", class: "neon-green-link" },
-        { title: "About me", url: "about.html", class: "neon-green-link" },
         { title: "Projects", url: "projects.html", class: "neon-green-link" },
+        { title: "About me", url: "about.html", class: "neon-green-link" },
         { title: "Contact", url: "contact.html", class: "neon-green-link" },
     ];
 
