@@ -1,0 +1,75 @@
+/* About Section */
+#about {
+  background-color: #1f3a4d;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Center content horizontally */
+}
+
+.about-content {
+  max-width: 800px;
+  margin-left: 30px; /* Add some space between the image and the text */
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+.bio {
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.headshot {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: bounceIn 1s ease-in-out;
+}
+
+
+/* Media Query for Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  #about {
+    flex-direction: column-reverse; /* Reverse the order of image and text */
+    text-align: center;
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .headshot-container {
+    width: 100%; /* Ensure full width for the image container */
+    margin-top: 20px; /* Add space above the image */
+  }
+
+   /* .headshot {
+    max-width: 350px; 
+    width: 100%;
+    height: auto;
+  }  */
+
+  .about-content {
+    margin-left: 0;
+    max-width: 100%; /* Ensure full width for text content */
+  }
+
+  #about h2 {
+    font-size: 22px; /* Smaller heading for mobile */
+  }
+
+  .bio {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+

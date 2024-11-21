@@ -1,0 +1,118 @@
+/* Timeline Section */
+.timeline {
+  padding: 60px 20px;
+  background-color: #1e2a3b; /* Dark background */
+  color: white; /* Set text to white for better visibility */
+}
+
+.timeline h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f1c40f; /* Bright yellow header */
+}
+
+/* Timeline container */
+.timeline-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Timeline line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #f1c40f; /* Bright yellow timeline */
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Timeline Event */
+.timeline .timeline-item {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #22344e; /* Dark blue event background */
+  z-index: 2;
+}
+
+/* Event position */
+.timeline .timeline-item.left {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.timeline .timeline-item.right {
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* Event marker (circle) */
+.timeline .timeline-item.left::before,
+.timeline .timeline-item.right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: #f1c40f; /* Bright yellow marker */
+  border-radius: 50%;
+  z-index: 3;
+  transform: translateY(-50%);
+}
+
+.timeline .timeline-item.left::before {
+  right: -10px;
+}
+
+.timeline .timeline-item.right::before {
+  left: -10px;
+}
+
+/* Event content */
+.timeline .timeline-item .timeline-content h3 {
+  font-size: 24px;
+  color: #ff6f61; /* Coral for event title */
+  margin-bottom: 10px;
+}
+
+.timeline .timeline-item .timeline-content p {
+  font-size: 16px;
+  color: #ffffff; /* White text for event description */
+  line-height: 1.6;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .timeline-container {
+    padding: 20px;
+  }
+
+  .timeline-line {
+    left: 10px; /* Adjust line position for smaller screens */
+  }
+
+  .timeline-item {
+    text-align: left;
+    padding: 20px 20px 20px 40px; /* Adjust padding for smaller screens */
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    text-align: left;
+    padding: 20px 20px 20px 40px;
+  }
+
+  .timeline-item.left::before,
+  .timeline-item.right::before {
+    left: 10px;
+    right: auto;
+  }
+}

@@ -1,0 +1,77 @@
+/* Projects Section */
+.projects {
+    background-color: #2c3e50; /* Dark grayish blue for a professional feel */
+    padding: 50px 20px;
+    color: #ecf0f1; /* Light text for readability */
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-item {
+    background-color: #34495e; /* Slightly lighter than section background */
+    border-radius: 8px;
+    overflow: hidden;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-img {
+    width: 100%; /* Make the image span the width of the card */
+    height: 250px; /* Increase the height for better visibility */
+    object-fit: contain; /* Ensure the entire image fits without cropping */
+    background-color: #1c2833; /* Add a background color for a cleaner look if images have transparency */
+    border-bottom: 2px solid #1abc9c; /* Accent border for separation */
+  }
+  
+  
+  .project-content {
+    padding: 20px;
+  }
+  
+  .project-content h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .project-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .project-link {
+    font-size: 1rem;
+    color: #ff6f61;; /* Accent color */
+    text-decoration: none;
+    border: 2px solid #ff6f61;;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: #ff6f61;;
+    color: #34495e;
+  }
+  

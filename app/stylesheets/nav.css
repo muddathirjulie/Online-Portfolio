@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  background-color: #1e2a3b; /* Dark Blue background for contrast */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0; /* Aligns the navbar to the right */
+  background:none; /* Darker background for the navbar */
+  padding: 15px 30px; /* Increased padding inside the navbar */
+  z-index: 100;
+  width: auto; /* Adjusts the width to fit the content */
+ 
+  transition: all 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ensures the container spans the full width */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 30px; /* Increased spacing between links */
+}
+
+.nav-links a {
+  color: white;
+  font-size: 20px; /* Increased font size */
+  font-weight: 700; /* Bolder font weight */
+  text-decoration: none;
+  padding: 10px 15px; /* Added padding for better click area */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.nav-links a:hover {
+  color: #ff8c00; /* Orange hover effect */
+  background-color: rgba(255, 140, 0, 0.2); /* Subtle background on hover */
+}
+
+/* Logo */
+.logo {
+  font-size: 28px; /* Larger font size for the logo */
+  color: #ff8c00; /* Orange logo */
+  font-weight: bold;
+  margin-left: auto; /* Pushes the logo to the left */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.logo:hover {
+  color: #f39c12; /* Slightly lighter orange on hover */
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 35px; /* Larger hamburger icon */
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    display: none; /* Hide menu by default on mobile */
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show menu when it's active */
+  }
+
+  .hamburger {
+    display: block;
+    order: -1; /* Move the hamburger button to the top */
+    margin-bottom: 10px; /* Optional: Add some spacing */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .logo {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
